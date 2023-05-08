@@ -1,0 +1,5 @@
+There once was a dev with a scheme,
+To deploy AWS resources with a team,
+They chose Terraform to script,
+And the process was whipped,
+Now their infrastructure is a dream!
