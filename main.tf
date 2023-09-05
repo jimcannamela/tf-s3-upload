@@ -30,4 +30,5 @@ resource "aws_s3_object" "object" {
   bucket = "my-tf-fun-bucket"
   key    = "mySecretFile"
   source = "./build/libs/sample.txt"
+  etag  = filemd5("./build/libs/sample.txt")
 }
