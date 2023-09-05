@@ -2,7 +2,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.0"
+      version = "~> 4.16"
     }
   }
 }
@@ -10,15 +10,15 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   // Change if you want to use a different AWS region
-  region = "us-east-1"
+  region = "us-east-2"
 }
 
 ## Create an S3 bucket
-resource "aws_s3_bucket" "example" {
-  bucket = "my-tf-test-bucket"
+resource "aws_s3_bucket" "jimcterraformbucket" {
+  bucket = "jimc-tf-test-bucket"
 
   tags = {
-    Name        = "My bucket"
+    Name        = "Jim C TF Bucket"
     Environment = "Dev"
   }
 }
